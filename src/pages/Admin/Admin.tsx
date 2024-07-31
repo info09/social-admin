@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Sidebar from "./Sidebar/Sidebar";
-import TopBar from "./TopBar/TopBar";
+import Header from "./Header/Header";
 
 export const Admin = () => {
   return (
@@ -10,7 +10,7 @@ export const Admin = () => {
       <div id="content-wrapper" className="d-flex flex-column">
         {/* Main Content */}
         <div id="content">
-          <TopBar />
+          <Header />
           {/* Begin Page Content */}
           <div className="container-fluid">
             {/* Page Heading */}

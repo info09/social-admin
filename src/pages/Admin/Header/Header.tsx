@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TopBar = () => {
+const Header = () => {
   const [isShowProfileDropdown, setIsShowProfileDropdown] = useState(false);
   return (
     <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -286,4 +286,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default Header;

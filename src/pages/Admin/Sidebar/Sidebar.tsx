@@ -20,7 +20,7 @@ const Sidebar = () => {
           <i className="fas fa-laugh-wink" />
         </div>
         <div className="sidebar-brand-text mx-3">
-          SB Admin <sup>2</sup>
+          Administrator
         </div>
       </a>
       {/* Divider */}
