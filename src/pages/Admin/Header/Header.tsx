@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { logout } from "../../../store/account/actions";
 
 const Header = () => {
   const [isShowProfileDropdown, setIsShowProfileDropdown] = useState(false);
+  const dispatch = useDispatch();
   return (
     <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
       {/* Sidebar Toggle (Topbar) */}
@@ -275,6 +278,7 @@ const Header = () => {
               href="#"
               data-toggle="modal"
               data-target="#logoutModal"
+              onClick={() => dispatch(logout())}
             >
               <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" />
               Logout
